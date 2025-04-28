@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Pulse Uganda</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #e0f7fa, #c8e6c9); /* Attractive gradient background */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white container */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative; /* To position the WhatsApp button */
+        }
+
+        header {
+            background-image: url('charles.png'); /* Replace with your logo image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+            position: relative; /* For absolute positioning of login/signup */
+        }
+
+        .auth-links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .auth-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: rgba(0, 123, 255, 0.7); /* Slightly transparent blue */
+            transition: background-color 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .auth-links a:hover {
+            background-color: rgba(0, 86, 179, 0.7); /* Darker transparent blue on hover */
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #007bff; /* Bright blue background */
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        .section p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative; /* For absolute positioning of WhatsApp button */
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366; /* WhatsApp green */
+            color: #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Ensure it stays on top */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128c7e; /* Darker WhatsApp green */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            header {
+                padding: 60px 0;
+            }
+
+            .auth-links {
+                top: 10px;
+                right: 10px;
+            }
+
+            .auth-links a {
+                margin-left: 10px;
+                padding: 6px 10px;
+                font-size: 0.8em;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px auto;
+                text-align: center;
+            }
+
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="auth-links">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Welcome to Info Pulse Uganda</h2>
+            <p>Your one-stop creative agency for digital solutions in Uganda. We specialize in website development, coding, graphics design, video editing, and more. Let us bring your vision to life!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Info Pulse Uganda</p>
+        </div>
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_ID.js" crossorigin="anonymous"></script>
+</body>
+</html>
